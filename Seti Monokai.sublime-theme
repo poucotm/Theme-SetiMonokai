@@ -1,0 +1,1179 @@
+[
+	//
+	// -----------------------------------------------------------------------------
+	// Author : yongchan jeon (Kris) poucotm@gmail.com
+	// File   : Seti Monokai.sublime-theme
+	// Create : 2016-07-10 15:03:28
+	// Editor : sublime text3, tab size (3)
+	// -----------------------------------------------------------------------------
+
+	// _____________________________________________________________________________
+	//
+	// * Basic Color Set
+	//
+	//			- medium white : [205,205,205], #CDCDCD
+	//			- white        : [215,215,215], #D7D7D7
+	//			- dark gray    : [ 40, 40, 40], #282828
+	//
+	//		from Seti
+	//			- black        : [ 13, 16, 17], #0D1011
+	//			- blue         : [ 65, 83, 91], #445366
+	//			- dark blue    : [ 37, 45, 55], #252D37
+	//			- medium blue  : [  0,159,255,160],
+	//			- light blue   : [ 79,153,211], #4F99D3
+	//			- orange       : [255,191, 59,200],  #FFBF3B, 200
+	//
+	//		from Monokai
+	//			- red          : [249,38,114],
+	//			- green        : [166,226,46],
+	//			- blue(cyan)   : [102,217,239],
+	//			- yellow       : [230,219,116], #E6DB74
+	//			- orange       : [253,136,1]
+	//			- violte       : [174,129,255], #AE81FF
+	// _____________________________________________________________________________
+
+	// (1) TABS (REGULAR)
+	// _____________________________________________________________________________
+
+		// (1.1) tab set
+		{
+			"class": "tabset_control",
+			"layer0.opacity": 1,
+			"tint_index": 0,
+			"layer1.texture": "Theme - Seti Monokai/images/tabset_background.png",
+			"layer1.inner_margin": [2, 6],
+			"layer1.opacity": 1,
+			"content_margin": [0,0,0,1],
+			"tab_overlap": 17,
+			"tab_width": 190,
+			"tab_min_width": 100,
+			"tab_height": 35,
+			"mouse_wheel_switch": false
+		},
+
+		// (1.2) tab element
+		{
+			"class": "tab_control",
+			"layer0.texture": "Theme - Seti Monokai/images/tab_mask.png",
+			"layer0.inner_margin": [22, 4],
+			"layer0.opacity": 1,
+			"layer2.texture": "Theme - Seti Monokai/images/transparent_selected_tab_bg.png",
+			"layer2.inner_margin": [22, 4],
+			"layer2.opacity": 1,
+			"tint_index": 0,
+			"tint_modifier": [255, 255, 255],
+			"content_margin": [24, 8, 23, 4],
+			"max_margin_trim": 6,
+			"hit_test_level": 0
+		},
+		{
+			"class": "tab_control",
+			"attributes": ["selected"],
+			"tint_modifier": [0, 0, 0, 0],
+			"layer0.texture": "Theme - Seti Monokai/images/tab_mask_white.png"
+		},
+
+	// (2) TABS BUTTONS
+	// _____________________________________________________________________________
+
+		// (2.1) tab close button
+		{
+			"class": "tab_close_button",
+			"content_margin": 8,
+			// Normal
+			"layer0.texture": "Theme - Seti Monokai/images/tab_x@2x.png",
+			"layer0.opacity": 1,
+			"layer0.inner_margin": 0,
+			// Hover
+			"layer1.texture": "Theme - Seti Monokai/images/tab_x_hover@2x.png",
+			"layer1.opacity": 0
+		},
+		{
+			"class": "tab_close_button",
+			"parents": [{"class": "tab_control", "attributes": ["dirty"]}],
+			"layer0.texture": "Theme - Seti Monokai/images/tab_circle@2x.png",
+			"layer0.opacity": 1
+		},
+		{
+			"class": "tab_close_button",
+			"attributes": ["hover"],
+			"layer0.opacity": 0,
+			"layer1.opacity": 1
+		},
+		{
+			"class": "tab_close_button",
+			"attributes": ["hover", "dirty"],
+			"layer0.opacity": 0,
+			"layer1.opacity": 1
+		},
+
+		// (2.2) for light schemes
+		{
+			"class": "tab_close_button",
+			"parents": [{"class": "tab_control", "attributes": ["file_light"]}],
+			// Normal
+			"layer0.texture": "Theme - Seti Monokai/images/light_x@2x.png",
+			"layer0.opacity": 1,
+			// Hover
+			"layer1.texture": "Theme - Seti Monokai/images/light_x_hover@2x.png",
+			"layer1.opacity": 0
+		},
+		{
+			"class": "tab_close_button",
+			"parents": [{"class": "tab_control", "attributes": ["dirty", "file_light"]}],
+			"layer0.texture": "Theme - Seti Monokai/images/tab_circle@2x.png",
+			"layer0.opacity": 1,
+			"layer1.opacity": 0
+		},
+		{
+			"class": "tab_close_button",
+			"attributes": ["hover"],
+			"parents": [{"class": "tab_control", "attributes": ["file_light"]}],
+			"layer0.opacity": 0,
+			"layer1.opacity": 1
+		},
+		{
+			"class": "tab_close_button",
+			"attributes": ["hover", "dirty"],
+			"parents": [{"class": "tab_control", "attributes": ["file_light"]}],
+			"layer0.opacity": 0,
+			"layer1.opacity": 1
+		},
+
+		// (2.3) for medium schemes
+		{
+			"class": "tab_close_button",
+			"parents": [{"class": "tab_control", "attributes": ["file_medium"]}],
+			// Normal
+			"layer0.texture": "Theme - Seti Monokai/images/light_x@2x.png",
+			"layer0.opacity": 1,
+			// Hover
+			"layer1.texture": "Theme - Seti Monokai/images/light_x_hover@2x.png",
+			"layer1.opacity": 0
+		},
+		{
+			"class": "tab_close_button",
+			"parents": [{"class": "tab_control", "attributes": ["dirty", "file_medium"]}],
+			"layer0.texture": "Theme - Seti Monokai/images/tab_circle@2x.png",
+			"layer0.opacity": 1,
+			"layer1.opacity": 0
+		},
+		{
+			"class": "tab_close_button",
+			"attributes": ["hover"],
+			"parents": [{"class": "tab_control", "attributes": ["file_medium"]}],
+			"layer0.opacity": 0,
+			"layer1.opacity": 1
+		},
+		{
+			"class": "tab_close_button",
+			"attributes": ["hover", "dirty"],
+			"parents": [{"class": "tab_control", "attributes": ["file_medium"]}],
+			"layer0.opacity": 0,
+			"layer1.opacity": 1
+		},
+
+	// (3) TABS LABELS
+	// _____________________________________________________________________________
+
+		{
+			"class": "tab_label",
+			"fade": true,
+			"font.size": 12,
+			"font.bold": false,
+			"fg": [215,215,215]	// <-- guna.white
+		},
+		{
+			"class": "tab_label",
+			"parents": [{"class": "tab_control","attributes": ["selected"]}],
+			// "fg": [255,191, 59,200],	// <-- monokai.yellow
+			"fg": [230,219, 116],	// <-- monokai.yellow
+			"font.bold": false
+		},
+		{
+			"class": "tab_label",
+			"parents": [{"class": "tab_control", "attributes": ["hover"]}],
+			"font.bold": false
+		},
+		{
+			"class": "tab_label",
+			"parents": [{"class": "tab_control", "attributes": ["transient"]}],
+			"font.italic": false
+		},
+		{
+			"class": "tab_label",
+			"parents": [{"class": "tab_control","attributes": ["dirty"]}],
+			"fg": [ 79,153,211]	// <-- seti.light_blue
+		},
+
+		// for light schemes
+		{
+			"class": "tab_label",
+			"parents": [{"class": "tab_control", "attributes": ["selected", "file_light"]}],
+			"fg": [0,0,0]
+		},
+		{
+			"class": "tab_label",
+			"parents": [{"class": "tab_control", "attributes": ["selected", "file_medium"]}],
+			"fg": [255, 255, 255]
+		},
+
+	// (4) TABS SCROLLING
+	// _____________________________________________________________________________
+
+		// (4.1) tab dropdown
+		{
+			"class": "show_tabs_dropdown_button",
+			"content_margin": [14,11],
+			"layer0.texture": "Theme - Seti Monokai/images/tabset-list-hover@2x.png",
+			"layer0.opacity": 1,
+			"layer0.inner_margin": [5,0,5,0]
+		},
+		{
+			"class": "show_tabs_dropdown_button",
+			"attributes": ["hover"],
+			"layer0.texture": "Theme - Seti Monokai/images/tabset-list@2x.png",
+			"layer0.opacity": 1
+		},
+		// (4.2) Tab scroll left
+		{
+			"class": "scroll_tabs_left_button",
+			"content_margin": [10,10],
+			"layer0.texture": "Theme - Seti Monokai/images/tabset-left-hover@2x.png",
+			"layer0.opacity": 1
+		},
+		{
+			"class": "scroll_tabs_left_button",
+			"attributes": ["hover"],
+			"layer0.texture": "Theme - Seti Monokai/images/tabset-left@2x.png",
+			"layer0.opacity": 1
+		},
+		// (4.3) tab scroll right
+		{
+			"class": "scroll_tabs_right_button",
+			"content_margin": [10,10],
+			"layer0.texture": "Theme - Seti Monokai/images/tabset-right-hover@2x.png",
+			"layer0.opacity": 1
+		},
+		{
+			"class": "scroll_tabs_right_button",
+			"attributes": ["hover"],
+			"layer0.texture": "Theme - Seti Monokai/images/tabset-right@2x.png",
+			"layer0.opacity": 1
+		},
+
+	// (5) FOLD BUTTONS
+	// _____________________________________________________________________________
+
+		{
+			"class": "fold_button_control",
+			"layer0.texture": "Theme - Seti Monokai/images/fold-closed@2x.png",
+			"layer0.opacity": 0.45,
+			"layer0.inner_margin": 0,
+			"content_margin": 8
+		},
+		{
+			"class": "fold_button_control",
+			"attributes": ["hover"],
+			"layer0.opacity": 0.85
+		},
+		{
+			"class": "fold_button_control",
+			"attributes": ["expanded"],
+			"layer0.texture": "Theme - Seti Monokai/images/fold-open@2x.png"
+		},
+		{
+			"class": "fold_button_control",
+			"attributes": ["expanded","hover"]
+		},
+
+	// (6) STANDARD SCROLLBARS
+	// _____________________________________________________________________________
+
+		// (6.1) standard vertical scroll bar
+		{
+			"class": "scroll_bar_control",
+			"layer0.tint": [ 40, 40, 40],	// <-- guna.dark_gray
+			"layer0.opacity": 1,
+			"layer0.inner_margin": 0,
+			"blur": true
+		},
+		{
+			"class": "scroll_bar_control",
+			"parents": [{"class": "overlay_control"}],
+			"layer0.tint": [13, 16, 17],
+			"layer0.opacity": 1,
+			"layer0.inner_margin": 0,
+			"blur": true
+		},
+		// (6.2) standard horizontal scroll bar
+		{
+			"class": "scroll_bar_control",
+			"attributes": ["horizontal"],
+			"layer0.tint": [ 40, 40, 40],	// <-- guna.dark_gray
+			"layer0.inner_margin": 0,
+			"blur": true
+		},
+		{
+			"class": "scroll_bar_control",
+			"attributes": ["horizontal"],
+			"parents": [{"class": "overlay_control"}],
+			"layer0.tint": [13, 16, 17],
+			"layer0.opacity": 1,
+			"layer0.inner_margin": 0,
+			"blur": true
+		},
+		// (6.3) standard scroll bar corner
+		{
+			"class": "scroll_corner_control",
+			"layer0.tint": [ 40, 40, 40],	// <-- guna.dark_gray
+			"layer0.opacity": 1,
+			"layer0.inner_margin": 0
+		},
+		// (6.4) standard vertical scroll puck
+		{
+			"class": "puck_control",
+			"layer0.tint":[0,159,255,160],	// <-- seti.medium_blue
+			"layer0.opacity": 1,
+			"layer0.inner_margin": 0,
+			"content_margin": [4,0],
+			"blur": true
+		},
+		// (6.5) standard horizontal scroll puck
+		{
+			"class": "puck_control",
+			"attributes": ["horizontal"],
+			"layer0.tint":[0,159,255,160],	// <-- seti.medium_blue
+			"layer0.inner_margin": 0,
+			"content_margin": [12,4],
+			"blur": false
+		},
+
+	// (7) OVERLAY SCROLLBARS
+	// _____________________________________________________________________________
+
+		// (7.1) overlay toggle scroll bar
+		{
+			"class": "scroll_area_control",
+			"settings": ["overlay_scroll_bars"],
+			"overlay": true
+		},
+		{
+			"class": "scroll_area_control",
+			"settings": ["!overlay_scroll_bars"],
+			"overlay": false
+		},
+		// (7.2) overlay vertical scroll bar
+		{
+			"class": "scroll_bar_control",
+			"settings": ["overlay_scroll_bars"],
+			"layer0.tint":[13, 16, 17],
+			"layer0.inner_margin": [0,5]
+		},
+		// (7.3) overlay horizontal scroll bar
+		{
+			"class": "scroll_bar_control",
+			"settings": ["overlay_scroll_bars"],
+			"attributes": ["horizontal"],
+			"layer0.tint":[13, 16, 17],
+			"layer0.inner_margin": [5,0]
+		},
+		// (7.4) overlay vertical puck
+		{
+			"class": "puck_control",
+			"settings": ["overlay_scroll_bars"],
+			"layer0.inner_margin": [0,5],
+			"content_margin": [2,38]
+		},
+		// (7.5) overlay horizontal puck
+		{
+			"class": "puck_control",
+			"settings": ["overlay_scroll_bars"],
+			"attributes": ["horizontal"],
+			"layer0.inner_margin": [5,0],
+			"content_margin": [16,2]
+		},
+
+	// (8) EMPTY WINDOW BACKGROUND
+	// _____________________________________________________________________________
+
+		{
+			"class": "sheet_container_control",
+			"layer0.tint": [13,16,17],	// <-- seti.black
+			"layer0.opacity": 1
+		},
+
+	// (9) GRID LAYOUT
+	// _____________________________________________________________________________
+
+		{
+			"class": "grid_layout_control",
+			"border_size": 2,
+			"border_color": [13,16,17]	// <-- seti.black
+		},
+
+	// (10) MINI MAP
+	// _____________________________________________________________________________
+
+		{
+			"class": "minimap_control",
+			"viewport_color": [13,14,15,180]	// <-- seti.black
+		},
+		{
+			"class": "minimap_control",
+			"attributes": ["hover"],
+			"viewport_color": [13,14,15,220]	// <-- seti.black
+		},
+
+	// (11) DIALOG
+	// _____________________________________________________________________________
+
+		{
+			"class": "dialog",
+			"layer0.tint": [238, 238, 238],
+			"layer0.opacity": 1
+		},
+
+	// (12) PROGRESS BAR
+	// _____________________________________________________________________________
+
+		{
+			"class": "progress_bar_control",
+			"layer0.tint": [94,235,184],
+			"layer0.opacity": 1
+		},
+		{
+			"class": "progress_gauge_control",
+			"layer0.opacity": 1,
+			"layer0.tint": [110, 29, 186],
+			"content_margin": [0, 6]
+		},
+
+	// (13) LABELS
+	// _____________________________________________________________________________
+
+		// general labels
+		{
+			"class": "label_control",
+			"color": [205, 205, 205]	// <-- guna.white
+		},
+		// text field labels
+		{
+			"class": "label_control",
+			"parents": [{"class": "panel_control"}],
+			"shadow_color": [50, 50, 50],
+			"shadow_offset": [0, -1]
+		},
+		// button labels
+		{
+			"class": "label_control",
+			"parents": [{"class": "button_control"}],
+			"shadow_color": [55, 55, 55],
+			"shadow_offset": [0, -1]
+		},
+
+	// (14) TOOLTIP
+	// _____________________________________________________________________________
+
+		// tooltip container
+		{
+			"class": "tool_tip_control",
+			"layer0.tint": [22,31,39],
+			"layer0.inner_margin": 1,
+			"layer0.opacity": 1,
+			"content_margin": [10, 8]
+		},
+		// tooltip content
+		{
+			"class": "tool_tip_label_control",
+			"color": [138,177,194],
+			"font.bold": false,
+			"font.size": 12
+		},
+
+	// (15) STATUS BAR
+	// _____________________________________________________________________________
+
+		// status bar container
+		{
+			"class": "status_bar",
+			"layer0.tint": [13, 16, 17],
+			"layer0.opacity": 1,
+			"content_margin": [20, 7, 10, 7]
+		},
+		// status bar button
+		{
+			"class": "status_button",
+			"min_size": [80, 0]
+		},
+		// status bar label
+		{
+			"class": "label_control",
+			"parents": [{"class": "status_bar"}],
+			"color": [205,205,205]
+		},
+		// panel switcher
+		{
+			"class": "panel_button_control",
+			"layer0.texture": "Theme - Seti Monokai/images/panels.png",
+			"layer0.opacity": 0.7,
+			"content_margin": [12, 8]
+		},
+
+	// (16) SIDEBAR
+	// _____________________________________________________________________________
+
+		// sidebar container
+		{
+			"class": "sidebar_container",
+			"layer0.opacity": 1,
+			"layer0.tint": [13, 16, 17],	// <-- seti.black
+			"content_margin": [0,5,0,0]
+		},
+		// sidebar tree || entries
+		{
+			"class": "sidebar_tree",
+			"indent_offset": 8,
+			"indent": 15,
+			"row_padding": [8,3],
+			"layer0.tint": [13,16,17],	// <-- seti.black
+			"layer0.opacity": 1.0,
+			"indent_top_level": true
+		},
+    	// anim
+		{
+			"class": "sidebar_container",
+			"layer0.tint": [13,16,17],
+			"layer0.inner_margin": [120, 34, 0, 0],
+			"layer1.texture": {
+			   "keyframes": [
+                "Theme - Seti Monokai/images/sidebar/sidebar_heading_alt-h8.png",
+                "Theme - Seti Monokai/images/sidebar/sidebar_heading_alt-h7.png",
+                "Theme - Seti Monokai/images/sidebar/sidebar_heading_alt-h6.png",
+                "Theme - Seti Monokai/images/sidebar/sidebar_heading_alt-h5.png",
+                "Theme - Seti Monokai/images/sidebar/sidebar_heading_alt-h4.png",
+                "Theme - Seti Monokai/images/sidebar/sidebar_heading_alt-h3.png",
+                "Theme - Seti Monokai/images/sidebar/sidebar_heading_alt-h2.png",
+                "Theme - Seti Monokai/images/sidebar/sidebar_heading_alt-h1.png",
+                "Theme - Seti Monokai/images/sidebar/sidebar_heading_alt-h0.png",
+            ],
+			   "loop": false,
+			   "frame_time": 0.030
+		  },
+			"layer1.opacity": 1.0,
+			"layer1.inner_margin": [120, 34, 0, 0],
+			"content_margin": [0, 34, 0, 0]
+		},
+		{
+			"class": "sidebar_container",
+			"attributes": ["hover"],
+			"layer1.texture": {
+			   "keyframes": [
+                "Theme - Seti Monokai/images/sidebar/sidebar_heading_alt-h0.png",
+                "Theme - Seti Monokai/images/sidebar/sidebar_heading_alt-h1.png",
+                "Theme - Seti Monokai/images/sidebar/sidebar_heading_alt-h2.png",
+                "Theme - Seti Monokai/images/sidebar/sidebar_heading_alt-h3.png",
+                "Theme - Seti Monokai/images/sidebar/sidebar_heading_alt-h4.png",
+                "Theme - Seti Monokai/images/sidebar/sidebar_heading_alt-h5.png",
+                "Theme - Seti Monokai/images/sidebar/sidebar_heading_alt-h6.png",
+                "Theme - Seti Monokai/images/sidebar/sidebar_heading_alt-h7.png",
+                "Theme - Seti Monokai/images/sidebar/sidebar_heading_alt-h8.png",
+            ],
+			   "loop": false,
+			   "frame_time": 0.030
+		  },
+			"layer1.opacity": 1.0,
+			"layer1.inner_margin": [120, 34, 0, 0],
+			"content_margin": [0, 34, 0, 0]
+		},
+		{
+			"class": "sidebar_tree",
+			"layer0.opacity": 0.0
+		},
+
+		// Sidebar rows || selected files bg
+		{
+			"class": "tree_row",
+			"layer0.texture": null,
+			"layer0.tint": [114, 146, 161, 20],
+			"layer0.opacity": { "target": 0.0, "speed": 50.0, "interpolation": "smoothstep" },
+		},
+		// Sidebar row selected
+		{
+			"class": "tree_row",
+			"attributes": ["selected"],
+			"layer0.opacity": { "target": 1.0, "speed": 50.0, "interpolation": "smoothstep" }
+		},
+		// Sidebar heading
+		{
+			"class": "sidebar_heading",
+			"color": [2,174,255],
+			"font.bold": false,
+			"font.bold": true,
+			"font.size": 11
+		},
+		// Sidebar files
+		{
+			"class": "sidebar_label",
+			"color": [205,205,205],
+			"font.bold": false,
+			"font.size": 11
+		},
+		{
+			"class": "sidebar_label",
+			"parents": [{"class": "tree_row","attributes": ["hover"]}],
+			"color": [255,255,255],
+			"font.bold": true
+		},
+		// sidebar folder
+		{
+			"class": "sidebar_label",
+			"parents": [{"class": "tree_row","attributes": ["expandable"]}],
+			"color": [205,205,205],
+			"font.bold": false
+		},
+		{
+			"class": "sidebar_label",
+			"parents": [{"class": "tree_row","attributes": ["expandable"]}],
+			"settings": ["bold_folder_labels"],
+			"font.bold": true
+		},
+		{
+			"class": "sidebar_label",
+			"parents": [{"class": "tree_row","attributes": ["expandable","hover"]}],
+			"color": [255,255,255],
+			"font.bold": true
+		},
+		{
+			"class": "icon_folder_dup",
+			"layer0.texture": "Theme - Seti Monokai/images/folder_dup@2x.png",
+			"layer0.opacity": 1.0,
+			"content_margin": [8, 8]
+		},
+		// sidebar open files entry selected
+		{
+			"class": "sidebar_label",
+			"parents": [{"class": "tree_row","attributes": ["selected"]}],
+			// "color":[255,191,59],
+			"color":[230,219,116],	// <-- monokai.yellow
+			"font.bold": false
+		},
+
+	// (17) SIDEBAR - OPEN FILE ICONS
+	// _____________________________________________________________________________
+
+		// Sidebar file close
+		{
+			"class": "close_button",
+			"layer0.texture": "Theme - Seti Monokai/images/tab_x_hover@2x.png",
+			"layer0.opacity": 1,
+			"layer0.inner_margin": 0,
+			"content_margin": 8
+		},
+		{
+			"class": "close_button",
+			"parents": [{"class": "tree_row","attributes": ["hover"]}],
+			"layer0.opacity": 1
+		},
+		// sidebar file dirty
+		{
+			"class": "close_button",
+			"attributes": ["dirty"],
+			"layer0.texture": "Theme - Seti Monokai/images/tab_circle@2x.png",
+			"layer0.opacity": 1
+		},
+		{
+			"class": "close_button",
+			"attributes": ["dirty"],
+			"parents": [{"class": "tree_row","attributes": ["selected"]}],
+			"layer0.texture": "Theme - Seti Monokai/images/tab_circle@2x.png"
+		},
+		{
+			"class": "close_button",
+			"attributes": ["dirty"],
+			"parents": [{"class": "tree_row","attributes": ["hover"]}],
+			"layer0.texture": "Theme - Seti Monokai/images/tab_circle@2x.png",
+			"layer0.opacity": 1
+		},
+		// sidebar file close hover
+		{
+			"class": "close_button",
+			"attributes": ["hover"],
+			"layer0.texture": "Theme - Seti Monokai/images/tab_x_hover@2x.png"
+		},
+		{
+			"class": "close_button",
+			"parents": [{"class": "tree_row","attributes": ["hover","selected"]}],
+			"layer0.texture": "Theme - Seti Monokai/images/tab_x_hover@2x.png",
+			"layer0.opacity": 1
+		},
+
+	// (18) SIDEBAR - GENERAL FILE ICONS
+	// _____________________________________________________________________________
+
+		// sidebar folder closed
+		{
+			"class": "icon_folder",
+			"layer0.texture": "Theme - Seti Monokai/images/folder@2x.png",
+			"layer0.opacity": 0.7,
+			"layer0.inner_margin": 0,
+			"content_margin": [8,8]
+		},
+		// sidebar folder opened
+		{
+			"class": "icon_folder",
+			"parents": [{ "class": "tree_row", "attributes": ["expanded"]}],
+			"layer0.texture": "Theme - Seti Monokai/images/folder_open@2x.png",
+			"layer0.opacity": 1,
+			"content_margin": [8,8],
+		},
+
+		// icon folder loading
+		{
+			"class": "icon_folder_loading",
+			"layer0.texture":
+		  {
+			   "keyframes":
+            [
+                "Theme - Seti Monokai/images/spinner/spinner7@2x.png",
+                "Theme - Seti Monokai/images/spinner/spinner6@2x.png",
+                "Theme - Seti Monokai/images/spinner/spinner5@2x.png",
+                "Theme - Seti Monokai/images/spinner/spinner4@2x.png",
+                "Theme - Seti Monokai/images/spinner/spinner3@2x.png",
+                "Theme - Seti Monokai/images/spinner/spinner2@2x.png",
+                "Theme - Seti Monokai/images/spinner/spinner1@2x.png",
+                "Theme - Seti Monokai/images/spinner/spinner@2x.png"
+            ],
+			   "loop": true,
+			   "frame_time": 0.075
+		  },
+			"layer0.opacity": 1,
+			"content_margin": 8
+		},
+
+	// (19) STANDARD TEXT BUTTONS
+	// _____________________________________________________________________________
+
+		// default button state
+		{
+			"class": "button_control",
+			"content_margin": [6, 5, 6, 6],
+			"min_size": [75, 0],
+			"layer0.texture": "Theme - Seti Monokai/images/btn-large.png",
+			"layer0.opacity": 1.0,
+			"layer0.inner_margin": [6, 6]
+		},
+		// pressed button state
+		{
+			"class": "button_control",
+			"attributes": ["pressed"],
+			"layer0.texture": "Theme - Seti Monokai/images/btn-large-on.png"
+		},
+
+	// (20) TEXT INPUT FIELD
+	// _____________________________________________________________________________
+
+		// text input field item
+		{
+			"class": "text_line_control",
+			"layer0.texture": "Theme - Seti Monokai/images/text-field.png",
+			// "layer0.tint": [13,16,17],
+			"layer0.tint": [255,255,255],
+			"layer0.opacity": 1.0,
+			"layer0.inner_margin": [4, 5, 4, 3],
+			"content_margin": [3, 3, 6, 3]
+		},
+
+		// text input dropdown
+		{
+			"class": "dropdown_button_control",
+			"content_margin": [8, 8],
+			"layer0.texture": "Theme - Seti Monokai/images/text-field-list.png",
+			"layer0.opacity": 1.0,
+			"layer0.inner_margin": [4, 4]
+		},
+		{
+			"class": "dropdown_button_control",
+			"attributes": ["hover"],
+			"layer0.texture": "Theme - Seti Monokai/images/text-field-list-hover.png",
+		},
+
+	// (21) PANEL BACKGROUNDS
+	// _____________________________________________________________________________
+
+		// bottom panel background
+		{
+			"class": "panel_control",
+			"layer0.texture": "Theme - Seti Monokai/images/panel-background.png",
+			"layer0.inner_margin": [2, 2, 2, 2],
+			"layer0.opacity": 1.0,
+			"content_margin": [2, 3, 2, 1]
+		},
+
+	// (21) MINI QUICK PANEL || super+shift+p
+	// _____________________________________________________________________________
+
+		{
+			"class": "mini_quick_panel_row",
+			"layer0.texture": "Theme - Seti Monokai/images/quick-panel-row.png",
+			"layer0.inner_margin": [2, 2, 2, 2],
+			"layer0.opacity": 1.0
+		},
+		{
+			"class": "mini_quick_panel_row",
+			"attributes": ["selected"],
+			"layer0.texture": "Theme - Seti Monokai/images/quick-panel-row-selected.png"
+		},
+
+	// (22) QUICK PANEL || super+p
+	// _____________________________________________________________________________
+
+		{
+			"class": "quick_panel",
+			"row_padding": [5, 2],
+			"layer0.tint": [33, 33, 33],
+			"layer0.opacity": 1.0,
+			"dark_content": true
+		},
+		{
+			"class": "quick_panel_row",
+			"layer0.texture": "Theme - Seti Monokai/images/quick-panel-row.png",
+			"layer0.inner_margin": [2, 2, 2, 2],
+			"layer0.opacity": 1.0
+		},
+		{
+			"class": "quick_panel_row",
+			"attributes": ["selected"],
+			"layer0.texture": "Theme - Seti Monokai/images/quick-panel-row-selected.png"
+		},
+		{
+			"class": "quick_panel_label",
+			"fg": [205,205,205],
+			"selected_fg": [255,255,255],
+			"match_fg": [102,217,239],
+			"selected_match_fg": [249,38,114]
+		},
+		{
+			"class": "quick_panel_path_label",
+			"fg": [130, 130, 130, 255],
+			"match_fg": [220, 220, 220, 255],
+			"selected_fg": [175, 175, 175, 255],
+			"selected_match_fg": [220, 220, 220, 255]
+		},
+		{
+			"class": "quick_panel_score_label",
+			"fg": [126, 199, 239, 255],
+			"selected_fg": [166, 229, 255, 255]
+		},
+
+	// (23) CODE COMPLETION DROPDOWN
+	// _____________________________________________________________________________
+
+		{
+			"class": "popup_control",
+			"content_margin": 0,
+			"layer0.tint": [38,43,49],
+			"layer0.opacity": 1
+		},
+		{
+			"class": "auto_complete",
+			"row_padding": [2,1]
+		},
+		{
+			"class": "auto_complete_label",
+			"fg": [205,205,205],
+			"selected_fg": [205,205,205],
+			"match_fg": [102,217,239], // blue
+			"selected_match_fg": [249,38,114] // red
+		},
+		{
+			"class": "table_row",
+			"layer0.opacity": 0
+		},
+		{
+			"class": "table_row",
+			"attributes": ["selected"],
+			"layer0.opacity": 1,
+			"layer0.tint": [60,71,81]
+		},
+
+	// (24) BOTTOM PANEL BUTTONS
+	// _____________________________________________________________________________
+
+		// button group middle
+		{
+			"class": "icon_button_control",
+			"layer0.texture": "Theme - Seti Monokai/images/btn-group-middle.png",
+			"layer0.inner_margin": [6, 6],
+			"layer0.opacity": 1.0,
+			"content_margin": [3, 3]
+		},
+		/*
+		{
+			"class": "icon_button_control",
+			"attributes": ["selected"],
+			"layer0.texture": "Theme - Seti Monokai/images/btn-group-middle-on.png"
+		},
+		*/
+		// button group left
+		{
+			"class": "icon_button_control",
+			"attributes": ["left"],
+			"layer0.texture": "Theme - Seti Monokai/images/btn-group-left.png",
+			"content_margin": [4, 3, 3, 3]
+		},
+		/*
+		{
+			"class": "icon_button_control",
+			"attributes": ["left", "selected"],
+			"layer0.texture": "Theme - Seti Monokai/images/btn-group-left-on.png"
+		},
+		*/
+		// button group right
+		{
+			"class": "icon_button_control",
+			"attributes": ["right"],
+			"layer0.texture": "Theme - Seti Monokai/images/btn-group-right.png",
+			"content_margin": [3, 3, 4, 3]
+		},
+		/*
+		{
+			"class": "icon_button_control",
+			"attributes": ["right", "selected"],
+			"layer0.texture": "Theme - Seti Monokai/images/btn-group-right-on.png"
+		},
+		*/
+		// button single
+		{
+			"class": "icon_button_control",
+			"attributes": ["left", "right"],
+			"layer0.texture": "Theme - Seti Monokai/images/btn-small.png",
+			"content_margin": [4, 3]
+		},
+		/*
+		{
+			"class": "icon_button_control",
+			"attributes": ["left", "right", "selected"],
+			"layer0.texture": "Theme - Seti Monokai/images/btn-small-on.png"
+		},
+		*/
+		// panel close button
+		{
+			"class": "panel_close_button",
+			"layer0.texture": "Theme - Seti Monokai/images/close.png",
+			"layer0.opacity": 0.85,
+			"content_margin": [8, 12]
+		},
+		{
+			"class": "panel_close_button",
+			"attributes": ["hover"],
+			"layer0.texture": "Theme - Seti Monokai/images/close-hover.png",
+			"layer0.opacity": 1.0
+		},
+		{
+			"class": "panel_close_button",
+			"attributes": ["pressed"],
+			"layer0.texture": "Theme - Seti Monokai/images/close.png"
+		},
+
+	// (25) BOTTOM PANEL ICONS - GROUP 1
+	// _____________________________________________________________________________
+
+		// regex search button
+		{
+			"class": "icon_regex",
+			"layer0.texture": "Theme - Seti Monokai/images/regex@2x.png",
+			"layer0.tint": [96,125,139],
+			"layer0.opacity": 1,
+			"content_margin": [9,9]
+		},
+		{
+			"class": "icon_regex",
+			"parents": [{"class": "icon_button_control","attributes": ["selected"]}],
+			"layer0.tint": [255,51,102]
+		},
+		{
+			"class": "icon_regex",
+			"parents": [{"class": "icon_button_control","attributes": ["hover"]}],
+			"layer0.tint": [148,211,209]
+		},
+		// case sensitive search button
+		{
+			"class": "icon_case",
+			"layer0.texture": "Theme - Seti Monokai/images/casesens@2x.png",
+			"layer0.tint": [96,125,139],
+			"layer0.opacity": 1,
+			"content_margin": [9,9]
+		},
+		{
+			"class": "icon_case",
+			"parents": [{"class": "icon_button_control","attributes": ["selected"]}],
+			"layer0.tint": [255,51,102]
+		},
+		{
+			"class": "icon_case",
+			"parents": [{"class": "icon_button_control","attributes": ["hover"]}],
+			"layer0.tint": [148,211,209]
+		},
+		// match whole word search button
+		{
+			"class": "icon_whole_word",
+			"layer0.texture": "Theme - Seti Monokai/images/wholeword@2x.png",
+			"layer0.tint": [96,125,139],
+			"layer0.opacity": 1,
+			"content_margin": [9,9]
+		},
+		{
+			"class": "icon_whole_word",
+			"parents": [{"class": "icon_button_control","attributes": ["selected"]}],
+			"layer0.tint": [255,51,102]
+		},
+		{
+			"class": "icon_whole_word",
+			"parents": [{"class": "icon_button_control","attributes": ["hover"]}],
+			"layer0.tint": [148,211,209]
+		},
+
+	// (26) BOTTOM PANEL ICONS - GROUP 1 (EXTENDED: FIND IN FILES))
+	// _____________________________________________________________________________
+
+		// Show search context button
+		{
+			"class": "icon_context",
+			"layer0.texture": "Theme - Seti Monokai/images/context@2x.png",
+			"layer0.tint": [96,125,139],
+			"layer0.opacity": 1,
+			"content_margin": [9,9]
+		},
+		{
+			"class": "icon_context",
+			"parents": [{"class": "icon_button_control","attributes": ["selected"]}],
+			"layer0.tint": [255,51,102]
+		},
+		{
+			"class": "icon_context",
+			"parents": [{"class": "icon_button_control","attributes": ["hover"]}],
+			"layer0.tint": [148,211,209]
+		},
+    	// use search buffer
+		{
+			"class": "icon_use_buffer",
+			"layer0.texture": "Theme - Seti Monokai/images/buffer@2x.png",
+			"layer0.tint": [96,125,139],
+			"layer0.opacity": 1,
+			"content_margin": [9,9]
+		},
+		{
+			"class": "icon_use_buffer",
+			"parents": [{"class": "icon_button_control","attributes": ["selected"]}],
+			"layer0.tint": [255,51,102]
+		},
+		{
+			"class": "icon_use_buffer",
+			"parents": [{"class": "icon_button_control","attributes": ["hover"]}],
+			"layer0.tint": [148,211,209]
+		},
+
+	// (27) BOTTOM PANEL ICONS - GROUP 2
+	// _____________________________________________________________________________
+
+		// Reverse search direction button (ST2 only)
+		{
+			"class": "icon_reverse",
+			"layer0.texture": "Theme - Seti Monokai/images/reverse@2x.png",
+			"layer0.tint": [96,125,139],
+			"layer0.opacity": 1,
+			"content_margin": [9,9]
+		},
+		{
+			"class": "icon_reverse",
+			"parents": [{"class": "icon_button_control","attributes": ["selected"]}],
+			"layer0.tint": [255,51,102]
+		},
+		{
+			"class": "icon_reverse",
+			"parents": [{"class": "icon_button_control","attributes": ["hover"]}],
+			"layer0.tint": [148,211,209]
+		},
+		// search wrap button
+		{
+			"class": "icon_wrap",
+			"layer0.texture": "Theme - Seti Monokai/images/wrap@2x.png",
+			"layer0.tint": [96,125,139],
+			"layer0.opacity": 1,
+			"content_margin": [9,9]
+		},
+		{
+			"class": "icon_wrap",
+			"parents": [{"class": "icon_button_control","attributes": ["selected"]}],
+			"layer0.tint": [255,51,102]
+		},
+		{
+			"class": "icon_wrap",
+			"parents": [{"class": "icon_button_control","attributes": ["hover"]}],
+			"layer0.tint": [148,211,209]
+		},
+    	// search in selection button
+		{
+			"class": "icon_in_selection",
+			"layer0.texture": "Theme - Seti Monokai/images/selection@2x.png",
+			"layer0.tint": [96,125,139],
+			"layer0.opacity": 1,
+			"content_margin": [9,9]
+		},
+		{
+			"class": "icon_in_selection",
+			"parents": [{"class": "icon_button_control","attributes": ["selected"]}],
+			"layer0.tint": [255,51,102]
+		},
+		{
+			"class": "icon_in_selection",
+			"parents": [{"class": "icon_button_control","attributes": ["hover"]}],
+			"layer0.tint": [148,211,209]
+		},
+
+	// (28) BOTTOM PANEL ICONS - GROUP 3
+	// _____________________________________________________________________________
+
+		// preserve case button
+		{
+			"class": "icon_preserve_case",
+			"layer0.texture": "Theme - Seti Monokai/images/casesens@2x.png",
+			"layer0.tint": [96,125,139],
+			"layer0.opacity": 1,
+			"content_margin": [9,9]
+		},
+		{
+			"class": "icon_preserve_case",
+			"parents": [{"class": "icon_button_control","attributes": ["selected"]}],
+			"layer0.tint": [255,51,102]
+		},
+		{
+			"class": "icon_preserve_case",
+			"parents": [{"class": "icon_button_control","attributes": ["hover"]}],
+			"layer0.tint": [148,211,209]
+		},
+
+	// (29) BOTTOM PANEL ICONS - GROUP 4
+	// _____________________________________________________________________________
+
+		// highlight results button
+		{
+			"class": "icon_highlight",
+			"layer0.texture": "Theme - Seti Monokai/images/highlight@2x.png",
+			"layer0.tint": [96,125,139],
+			"layer0.opacity": 1,
+			"content_margin": [9,9]
+		},
+		{
+			"class": "icon_highlight",
+			"parents": [{"class": "icon_button_control","attributes": ["selected"]}],
+			"layer0.tint": [255,51,102]
+		},
+		{
+			"class": "icon_highlight",
+			"parents": [{"class": "icon_button_control","attributes": ["hover"]}],
+			"layer0.tint": [148,211,209]
+		}
+
+]
