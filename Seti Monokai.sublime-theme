@@ -69,8 +69,9 @@
 		{
 			"class": "tab_control",
 			"attributes": ["selected"],
-			"tint_modifier": [0, 0, 0, 0],
-			"layer0.texture": "Theme - Seti Monokai/images/tab_mask_white.png"
+			// "tint_modifier": [13, 16, 17, 255],
+			"layer0.opacity": 1,
+			"layer0.texture": "Theme - Seti Monokai/images/tab_mask_sel.png"
 		},
 
 	// (2) TABS BUTTONS
@@ -186,7 +187,6 @@
 		{
 			"class": "tab_label",
 			"parents": [{"class": "tab_control","attributes": ["selected"]}],
-			// "fg": [255,191, 59,200],	// <-- monokai.yellow
 			"fg": [230,219, 116],	// <-- monokai.yellow
 			"font.bold": false
 		},
