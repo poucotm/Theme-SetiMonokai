@@ -3,7 +3,7 @@
 
 Modified Set of [Seti_UI](https://packagecontrol.io/packages/Seti_UI), Monokai Color Scheme
 
-Thanks to original authors [Muah (ctf0)](https://github.com/ctf0), [jesseweed](https://github.com/jesseweed/seti-ui)
+Thanks to original authors [Muah (ctf0)](https://github.com/ctf0), [jesseweed](https://github.com/jesseweed)
 
 ### Changes from Seti_UI
 	- Colors
