@@ -1,9 +1,9 @@
 # Theme - Seti Monokai for Sublime Text
 ==================================
 
-Modified Set of [Seti_UI](https://packagecontrol.io/packages/Seti_UI), Monokai Color Scheme
+#### Modified Set of [Seti_UI](https://packagecontrol.io/packages/Seti_UI), Monokai Color Scheme, simplied without Options
 
-Thanks to original authors [Muah (ctf0)](https://github.com/ctf0), [jesseweed](https://github.com/jesseweed)
+#### Thanks to original authors [Muah (ctf0)](https://github.com/ctf0), [jesseweed](https://github.com/jesseweed)
 
 ### Changes from Seti_UI
 	- Colors
