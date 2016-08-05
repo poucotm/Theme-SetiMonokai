@@ -1,12 +1,13 @@
 # Theme - Seti Monokai for Sublime Text
 ==================================
 
-##### Modified Set of [Seti_UI](https://packagecontrol.io/packages/Seti_UI), Monokai Color Scheme, simplied without Options
+##### Modified Set of [Seti_UI Theme](https://packagecontrol.io/packages/Seti_UI), Monokai Color Scheme, Simplied Without Options
 
 ##### Thanks to original authors [Muah (ctf0)](https://github.com/ctf0), [jesseweed](https://github.com/jesseweed)
 
 #### Changes from Seti_UI
 	- Colors
+	- Tabs
 	- Scroll Bar
 	- Quick Panel
 	- Bottom Panel (Find/Find in Files/Python)
