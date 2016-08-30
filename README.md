@@ -1,5 +1,6 @@
 # Theme - Seti Monokai for Sublime Text
-==================================
+
+[![Package Control](https://packagecontrol.herokuapp.com/downloads/Theme%20-%20Seti%20Monokai.svg?style=flat-square)](https://packagecontrol.io/packages/Theme%20-%20Seti%20Monokai)
 
 ##### Modified Set of [Seti_UI Theme](https://packagecontrol.io/packages/Seti_UI), Monokai Color Scheme, Simplied Without Options
 
@@ -12,6 +13,7 @@
 	- Quick Panel
 	- Bottom Panel (Find/Find in Files/Python)
 	- Side Bar
+
 
 #### Settings : Preferences > Settings - User
 ```json
