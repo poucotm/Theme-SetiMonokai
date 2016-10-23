@@ -528,7 +528,14 @@
 			"class": "sidebar_container",
 			"layer0.opacity": 1,
 			"layer0.tint": [13, 16, 17],	// <-- seti.black
-			"content_margin": [0,5,0,0]
+			"content_margin": [0,5,0,0],
+		},
+		{
+			"class": "sidebar_container",
+			"content_margin": [0, 10, 0, 0],
+			"layer1.texture": "Theme - Seti Monokai/images/separator_right.png",
+			"layer1.inner_margin": [0, 1, 2, 1],
+			"layer1.opacity": 1
 		},
 		// sidebar tree || entries
 		{
@@ -545,7 +552,7 @@
 			"class": "sidebar_container",
 			"layer0.tint": [13,16,17],
 			"layer0.inner_margin": [120, 34, 0, 0],
-			"layer1.texture": {
+			"layer2.texture": {
 			   "keyframes": [
                 "Theme - Seti Monokai/images/sidebar/sidebar_heading_alt-h8.png",
                 "Theme - Seti Monokai/images/sidebar/sidebar_heading_alt-h7.png",
@@ -560,14 +567,14 @@
 			   "loop": false,
 			   "frame_time": 0.030
 		  },
-			"layer1.opacity": 1.0,
-			"layer1.inner_margin": [120, 34, 0, 0],
+			"layer2.opacity": 1.0,
+			"layer2.inner_margin": [120, 34, 0, 0],
 			"content_margin": [0, 34, 0, 0]
 		},
 		{
 			"class": "sidebar_container",
 			"attributes": ["hover"],
-			"layer1.texture": {
+			"layer2.texture": {
 			   "keyframes": [
                 "Theme - Seti Monokai/images/sidebar/sidebar_heading_alt-h0.png",
                 "Theme - Seti Monokai/images/sidebar/sidebar_heading_alt-h1.png",
@@ -582,8 +589,8 @@
 			   "loop": false,
 			   "frame_time": 0.030
 		  },
-			"layer1.opacity": 1.0,
-			"layer1.inner_margin": [120, 34, 0, 0],
+			"layer2.opacity": 1.0,
+			"layer2.inner_margin": [120, 34, 0, 0],
 			"content_margin": [0, 34, 0, 0]
 		},
 		{
@@ -850,7 +857,7 @@
 			"class": "quick_panel_label",
 			"fg": [205,205,205],
 			"selected_fg": [255,255,255],
-			"match_fg": [102,217,239],
+			"match_fg": [ 79,153,211],
 			"selected_match_fg": [249,38,114]
 		},
 		{

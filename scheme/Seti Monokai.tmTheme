@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>name</key>
-    <string>Monokai Soda</string>
+    <string>Seti Monokai</string>
     <key>settings</key>
     <array>
         <dict>
@@ -131,7 +131,7 @@
                 <key>fontStyle</key>
                 <string>italic</string>
                 <key>foreground</key>
-                <string>#66D9EF</string>
+                <string>#4F99D3</string>
             </dict>
         </dict>
         <dict>
@@ -222,7 +222,7 @@
                 <key>fontStyle</key>
                 <string></string>
                 <key>foreground</key>
-                <string>#66D9EF</string>
+                <string>#4F99D3</string>
             </dict>
         </dict>
         <dict>
@@ -235,7 +235,7 @@
                 <key>fontStyle</key>
                 <string></string>
                 <key>foreground</key>
-                <string>#66D9EF</string>
+                <string>#4F99D3</string>
             </dict>
         </dict>
         <dict>
@@ -248,7 +248,7 @@
                 <key>fontStyle</key>
                 <string>italic</string>
                 <key>foreground</key>
-                <string>#66D9EF</string>
+                <string>#4F99D3</string>
             </dict>
         </dict>
         <dict>
