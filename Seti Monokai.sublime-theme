@@ -180,6 +180,7 @@
 		{
 			"class": "tab_label",
 			"fade": true,
+			"font.face": "Dejavu Sans Mono",
 			"font.size": 12,
 			"font.bold": false,
 			"fg": [215,215,215]	// <-- guna.white
@@ -487,6 +488,7 @@
 		{
 			"class": "tool_tip_label_control",
 			"color": [138,177,194],
+			"font.face": "Dajavu Sans Mono",
 			"font.bold": false,
 			"font.size": 12
 		},
@@ -510,6 +512,8 @@
 		{
 			"class": "label_control",
 			"parents": [{"class": "status_bar"}],
+			"font.face": "Dejavu Sans Mono",
+			"font.size": 11,
 			"color": [205,205,205]
 		},
 		// panel switcher
@@ -542,9 +546,9 @@
 			"class": "sidebar_tree",
 			"indent_offset": 8,
 			"indent": 15,
-			"row_padding": [8,3],
+			"row_padding": [0, 3],
 			"layer0.tint": [13,16,17],	// <-- seti.black
-			"layer0.opacity": 1.0,
+			"layer0.opacity": 0.0,
 			"indent_top_level": true
 		},
     	// anim
@@ -593,11 +597,6 @@
 			"layer2.inner_margin": [120, 34, 0, 0],
 			"content_margin": [0, 34, 0, 0]
 		},
-		{
-			"class": "sidebar_tree",
-			"layer0.opacity": 0.0
-		},
-
 		// Sidebar rows || selected files bg
 		{
 			"class": "tree_row",
@@ -614,17 +613,18 @@
 		// Sidebar heading
 		{
 			"class": "sidebar_heading",
-			"color": [2,174,255],
+			// "color": [2,174,255],
+			"font.face": "Dajavu Sans Mono",
 			"font.bold": false,
-			"font.bold": true,
-			"font.size": 11
+			"font.size": 12
 		},
 		// Sidebar files
 		{
 			"class": "sidebar_label",
-			"color": [205,205,205],
+			"color": [160,160,160],
+			"font.face": "Dejavu Sans Mono",
 			"font.bold": false,
-			"font.size": 11
+			"font.size": 12
 		},
 		{
 			"class": "sidebar_label",

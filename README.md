@@ -23,6 +23,9 @@
 }
 ```
 
+#### Font
+	Default font : Dejavu Sans Mono
+
 #### Screenshot
 
 ![Image of Log Highlight](https://raw.githubusercontent.com/poucotm/Links/master/image/setimono-osx.png)
