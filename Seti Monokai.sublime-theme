@@ -29,7 +29,7 @@
 	//			- blue(cyan)   : [102,217,239],
 	//			- yellow       : [230,219,116], #E6DB74
 	//			- orange       : [253,136,1]
-	//			- violte       : [174,129,255], #AE81FF
+	//			- violet       : [174,129,255], #AE81FF
 	// _____________________________________________________________________________
 
 	// (1) TABS (REGULAR)
@@ -238,7 +238,7 @@
 		// (4.2) Tab scroll left
 		{
 			"class": "scroll_tabs_left_button",
-			"content_margin": [10,10],
+			"content_margin": [10,17],
 			"layer0.texture": "Theme - Seti Monokai/images/tabset-left-hover@2x.png",
 			"layer0.opacity": 1
 		},
@@ -251,7 +251,7 @@
 		// (4.3) tab scroll right
 		{
 			"class": "scroll_tabs_right_button",
-			"content_margin": [10,10],
+			"content_margin": [10,17],
 			"layer0.texture": "Theme - Seti Monokai/images/tabset-right-hover@2x.png",
 			"layer0.opacity": 1
 		},
