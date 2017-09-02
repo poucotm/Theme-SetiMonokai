@@ -40,12 +40,13 @@ public class Test extends Activity {
         setContentView(R.layout.main);
     }
 
-    public void onAddTab(View v) {
-        final ActionBar bar = getActionBar();
-        final int tabCount = bar.getTabCount();
-        final String text = "Tab " + tabCount;
-        bar.addTab(bar.newTab()
-                .setText(text)
+    // public void onAddTab(View v) {
+    //     final ActionBar bar = getActionBar();
+    //     final int tabCount = bar.getTabCount();
+    //     final String text = "Tab " + tabCount;
+    //     bar.addTab(bar.newTab()
+    //             .setText(text);
+    // }
 
     public void onRemoveTab(View v) {
         final ActionBar bar = getActionBar();
@@ -54,8 +55,6 @@ public class Test extends Activity {
 
     public void onToggleTabs(View v) {
         final ActionBar bar = getActionBar();
-
-        }
     }
 
     public void onRemoveAllTabs(View v) {

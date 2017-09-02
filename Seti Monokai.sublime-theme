@@ -574,7 +574,7 @@
 		  },
 			"layer2.opacity": 1.0,
 			"layer2.inner_margin": [120, 34, 0, 0],
-			"content_margin": [0, 34, 0, 0]
+			"content_margin": [0, 34, 0, -10]
 		},
 		{
 			"class": "sidebar_container",
@@ -595,7 +595,7 @@
 			   "frame_time": 0.030
 		  },
 			"layer2.opacity": 1.0,
-			"layer2.inner_margin": [120, 34, 0, 0],
+			"layer2.inner_margin": [120, 34, 0, -10],
 			"content_margin": [0, 34, 0, 0]
 		},
 		// Sidebar rows || selected files bg
