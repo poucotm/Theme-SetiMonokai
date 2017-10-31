@@ -32,9 +32,13 @@ Thanks to original authors [Muah (ctf0)](https://github.com/ctf0), [jesseweed](h
 
 Try [__Guna__](https://packagecontrol.io/packages/Guna) new functional theme with a clock.
 
+[![Image of Guna][S1]][L1]
+
 ### Issues
 
 When you have an issue, tell me through [https://github.com/poucotm/Theme-SetiMonokai/issues](https://github.com/poucotm/Theme-SetiMonokai/issues), or send me an e-mail poucotm@gmail.com
 
 [PP]:https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=89YVNDSC7DZHQ "PayPal"
 [PM]:https://www.paypal.me/poucotm/2.5 "PayPal"
+[S1]:https://raw.githubusercontent.com/poucotm/Links/master/image/Guna/guna-screenshot-1.png "Guna"
+[L1]:https://packagecontrol.io/packages/Guna
