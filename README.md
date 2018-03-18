@@ -30,7 +30,7 @@ Thanks to original authors [Muah (ctf0)](https://github.com/ctf0), [jesseweed](h
 
 ### Another Theme
 
-Try [__Guna__](https://packagecontrol.io/packages/Guna) new functional theme with a clock.
+Try [__Guna__](https://packagecontrol.io/packages/Guna) most innovative theme with widgets.
 
 [![Image of Guna][S1]][L1]
 
@@ -40,5 +40,5 @@ When you have an issue, tell me through [https://github.com/poucotm/Theme-SetiMo
 
 [PP]:https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=89YVNDSC7DZHQ "PayPal"
 [PM]:https://www.paypal.me/poucotm/2.5 "PayPal"
-[S1]:https://raw.githubusercontent.com/poucotm/Links/master/image/Guna/guna-screenshot-1.png "Guna"
+[S1]:https://raw.githubusercontent.com/poucotm/Links/master/image/Guna/guna-screenshot.png "Guna"
 [L1]:https://packagecontrol.io/packages/Guna
